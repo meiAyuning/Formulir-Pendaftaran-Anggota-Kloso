@@ -5,40 +5,53 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Formulir Pendaftaran</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <form>
-            <h1>Formulir Pendaftaran Anggota Kloso</h1>
-            <label for="nama">Nama Lengkap :</label>
+        <div class="seluruh">
+        <div class="container">
+            <h1>Formulir Pendaftaran <br> Anggota Kloso</h1>
             <br>
-            <input type="text" name="nama" placeholder="Nama Lengkap">
+            <form action="">
+            <div class="input">
+                <label for="nama"><b>Nama Lengkap :</b></label><br>
+                <input type="text" name="nama" placeholder="Nama Lengkap">
+            </div>
             <br>
-            <label for="email">Angkatan :</label>
+            <div class="input">
+                <label for="email"><b>Angkatan :</b></label><br>
+                <input type="email" name="email" placeholder="Angkatan"> 
+            </div>
             <br>
-            <input type="email" name="email" placeholder="Angkatan">
+            <div class="input">
+                <label for="jurusan"><b>Jurusan :</b></label>
+                <br>
+                <input type="radio" name="teknik" value="teknik">S1 TI
+                <input type="radio" name="manajemen" value="manajemen">D3 MI 
+            </div>
+            <br> 
+            <div class="input">
+                <label for="gender"><b>Jenis Kelamin :</b></label><br>
+                <input type="radio" name="gender" value="L">Laki - Laki
+                <input type="radio" name="gender" value="P">Perempuan
+            </div>
             <br>
-            <label for="jurusan">Jurusan :</label>
+            <div class="input">
+                <label for="alamat"><b>Alasan Ikut UKM Kloso :</b></label><br>
+                <textarea name="alamat" cols="50" rows="3" placeholder="Alasan Mengikuti Kloso"></textarea>
+            </div>
             <br>
-            <input type="radio" name="teknik" value="teknik">Teknik Informatika
+            <div class="input">
+                <label class="foto" >Upload Foto</label><br>
+                <input type="file" id="foto">
+                <label for="foto" class="label-foto">Pilih Foto</label>    
+            </div>
             <br>
-            <input type="radio" name="manajemen" value="manajemen">Manajemen Informatika
-            <br>
-            <label for="gender">Jenis Kelamin:</label>
-            <br>
-            <input type="radio" name="gender" value="L">Laki - Laki
-            <br>
-            <input type="radio" name="gender" value="P">Perempuan
-            <br>
-            <label for="alamat">Alasan Ikut UKM Kloso :</label>
-            <br>
-            <textarea name="alamat" cols="50" rows="3" placeholder="Alasan Mengikuti Kloso"></textarea>
-            <br>
-            <label for="foto">Upload Foto:</label>
-            <br>
-            <input type="file" id="foto" name="foto">
-            <br>
-            <br>
-            <input type="submit" value="Daftar">
-        </form>
+            <div class="input">
+                <input type="submit" class="daftar" value="Daftar">    
+            </div>
+            </form>
+            </div>
+        </div>   
     </body>
 </html>
